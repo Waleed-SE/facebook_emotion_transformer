@@ -24,7 +24,7 @@ streamlit run app.py
 
 - `project2_complete.ipynb`: Complete training pipeline
 - `app.py`: Streamlit chatbot interface
-- `best_model.pt`: Trained model checkpoint
+- `best_model.pt`: Trained model checkpoint (I Have Manually Changed It Other For Reasons)
 - `EVALUATION_REPORT.md`: Metrics and analysis
 
 ## Model Architecture
