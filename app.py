@@ -7,6 +7,15 @@ from nltk.tokenize import word_tokenize
 import nltk
 nltk.download('punkt_tab')
 
+import urllib.request
+
+MODEL_URL = "https://huggingface.co/waleed1224/facebook_emotion_transformer/resolve/main/best_model_512_2_2_0.1_4096.pt"
+MODEL_PATH = "best_model_512_2_2_0.1_4096.pt"
+import os
+if not os.path.exists(MODEL_PATH):
+    urllib.request.urlretrieve(MODEL_URL, MODEL_PATH)
+
+
 class PositionalEncoding(nn.Module):
     def __init__(self, d_model, max_len=5000):
         super().__init__()
